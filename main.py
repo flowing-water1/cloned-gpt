@@ -23,8 +23,7 @@ with st.sidebar:
     openai_api_key = st.text_input("请输入OpenAI API密钥：")
     openai_api_base = st.text_input("请输入AI的Base Url：", "https://api.gpts.vin/v1")
     model_name = st.selectbox("选择翻译模型", ["gpt-3.5-turbo", "gpt-4o", "gpt-4", "gpt-4-1106-preview"])
-    st.markdown("[获取OpenAI API密钥](https://platform.openai.com/account/api-keys)")
-    st.markdown("[国内的可以用智谱AI API密钥（推荐）](https://open.bigmodel.cn/overview)")
+
 
     clean = st.button("清空聊天记录")
 
